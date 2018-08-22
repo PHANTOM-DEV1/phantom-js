@@ -1,13 +1,13 @@
 **:warning: SOON TO BE DEPRECATED IN FAVOR OF https://github.com/ArkEcosystem/core/tree/master/packages/crypto - PLEASE SUBMIT PULL REQUESTS TO THE CORE V2 REPOSITORY :warning:***
 
-![ARK JavaScript](https://i.imgur.com/ywwE2uF.png)
+![PHANTOM JavaScript](https://i.imgur.com/ywwE2uF.png)
 
 
 [![Build Status](https://travis-ci.org/ArkEcosystem/ark-js.svg?branch=master)](https://travis-ci.org/ArkEcosystem/ark-js)
 
 # Ark JS
 
-Ark JS is a JavaScript library for sending ARK transactions. It's main benefit is that it does not require a locally installed ARK node, and instead utilizes the existing peers on the network. It can be used from the client as a [browserify](http://browserify.org/) compiled module, or on the server as a standard Node.js module.
+Ark JS is a JavaScript library for sending PHANTOM transactions. It's main benefit is that it does not require a locally installed ARK node, and instead utilizes the existing peers on the network. It can be used from the client as a [browserify](http://browserify.org/) compiled module, or on the server as a standard Node.js module.
 
 ## Installation
 
@@ -48,7 +48,7 @@ On the client:
 On the server:
 
 ```js
-var ark = require("arkjs");
+var phantom = require("phantomjs");
 ```
 
 ### Generating a key pair
@@ -56,7 +56,7 @@ var ark = require("arkjs");
 To generate a public / private key pair from a given passphrase:
 
 ```js
-var keys = ark.crypto.getKeys("passphrase");
+var keys = phantom.crypto.getKeys("passphrase");
 ```
 
 Returning:
@@ -85,7 +85,7 @@ Returning:
 To generate a unique Ark address from a given public key:
 
 ```js
-var address = ark.crypto.getAddress("5d036a858ce89f844491762eb89e2bfbd50a4a0a0da658e4b2628b25b117ae09");
+var address = phantom.crypto.getAddress("5d036a858ce89f844491762eb89e2bfbd50a4a0a0da658e4b2628b25b117ae09");
 ```
 
 Returning:
@@ -100,7 +100,7 @@ To create a signed transaction object, which can then be broadcasted onto the ne
 
 ```js
 var amount      = 1000 * Math.pow(10, 8); // 100000000000
-var transaction = ark.transaction.createTransaction("AGihocTkwDygiFvmg6aG8jThYTic47GzU9", amount, null, "passphrase", "secondPassphrase");
+var transaction = phantom.transaction.createTransaction("AGihocTkwDygiFvmg6aG8jThYTic47GzU9", amount, null, "passphrase", "secondPassphrase");
 ```
 
 Returning:
@@ -110,7 +110,7 @@ Returning:
   type: 0, // Transaction type. 0 = Normal transaction.
   amount: 100000000000, // The amount to send expressed as an integer value.
   asset: {}, // Transaction asset, dependent on tx type.
-  fee: 100000000, // 0.1 ARK expressed as an integer value.
+  fee: 100000000, // 0.1 PHANTOM expressed as an integer value.
   id: "500224999259823996", // Transaction ID.
   recipientId: "AGihocTkwDygiFvmg6aG8jThYTic47GzU9", // Recipient ID.
   senderPublicKey: "56e106a1d4a53dbe22cac52fefd8fc4123cfb4ee482f8f25a4fc72eb459b38a5", // Sender's public key.
@@ -267,19 +267,19 @@ If the transaction is deemed invalid, or an error is encountered, the receiving 
 #### Creating a delegate transaction
 
 ```js
-var transaction = ark.delegate.createDelegate("secret", "username", "secondSecret");
+var transaction = phantom.delegate.createDelegate("secret", "username", "secondSecret");
 ```
 
 #### Creating a second signature transaction
 
 ```js
-var transaction = ark.signature.createSignature("secret", "secondSecret");
+var transaction = phantom.signature.createSignature("secret", "secondSecret");
 ```
 
 #### Creating a vote transaction
 
 ```js
-var transaction = ark.vote.createVote("secret", ["+58199578191950019299181920120128129"], "secondSecret");
+var transaction = phantom.vote.createVote("secret", ["+58199578191950019299181920120128129"], "secondSecret");
 ```
 
 ***
