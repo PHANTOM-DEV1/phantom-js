@@ -5,9 +5,9 @@
 
 [![Build Status](https://travis-ci.org/ArkEcosystem/ark-js.svg?branch=master)](https://travis-ci.org/ArkEcosystem/ark-js)
 
-# Ark JS
+# Phantom JS
 
-Ark JS is a JavaScript library for sending PHANTOM transactions. It's main benefit is that it does not require a locally installed ARK node, and instead utilizes the existing peers on the network. It can be used from the client as a [browserify](http://browserify.org/) compiled module, or on the server as a standard Node.js module.
+Phantom JS is a JavaScript library for sending PHANTOM transactions. It's main benefit is that it does not require a locally installed PHANTOM node, and instead utilizes the existing peers on the network. It can be used from the client as a [browserify](http://browserify.org/) compiled module, or on the server as a standard Node.js module.
 
 ## Installation
 
