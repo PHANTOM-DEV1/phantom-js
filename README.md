@@ -1,6 +1,6 @@
 **:warning: SOON TO BE DEPRECATED IN FAVOR OF https://github.com/ArkEcosystem/core/tree/master/packages/crypto - PLEASE SUBMIT PULL REQUESTS TO THE CORE V2 REPOSITORY :warning:***
 
-![PHANTOM JavaScript](https://imgur.com/a/KBYT3rm)
+![PHANTOM JavaScript](https://i.imgur.com/LtC0BOT.png)
 
 
 [![Build Status](https://travis-ci.org/ArkEcosystem/ark-js.svg?branch=master)](https://travis-ci.org/ArkEcosystem/ark-js)
