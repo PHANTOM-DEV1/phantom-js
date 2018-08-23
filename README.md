@@ -1,9 +1,9 @@
-**:warning: SOON TO BE DEPRECATED IN FAVOR OF https://github.com/ArkEcosystem/core/tree/master/packages/crypto - PLEASE SUBMIT PULL REQUESTS TO THE CORE V2 REPOSITORY :warning:***
+**:warning: SOON TO BE DEPRECATED IN FAVOR OF https://github.com/PhantomEcosystem/core/tree/master/packages/crypto - PLEASE SUBMIT PULL REQUESTS TO THE CORE V2 REPOSITORY :warning:***
 
 ![PHANTOM JavaScript](https://i.imgur.com/LtC0BOT.png)
 
 
-[![Build Status](https://travis-ci.org/ArkEcosystem/ark-js.svg?branch=master)](https://travis-ci.org/ArkEcosystem/ark-js)
+[![Build Status](https://travis-ci.org/PhantomEcosystem/phantom-js.svg?branch=master)](https://travis-ci.org/PhantomEcosystem/phantom-js)
 
 # Phantom JS
 
@@ -11,7 +11,7 @@ Phantom JS is a JavaScript library for sending PHANTOM transactions. It's main b
 
 ## Installation
 
-[![npm package](https://nodei.co/npm/arkjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/arkjs/)
+[![npm package](https://nodei.co/npm/phantomjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/phantomjs/)
 
 ## Building
 
@@ -42,7 +42,7 @@ Tests written using mocha + schedule.js.
 On the client:
 
 ```html
-<script src="node_modules/arkjs/bundle.min.js"></script>
+<script src="node_modules/phantomjs/bundle.min.js"></script>
 ```
 
 On the server:
@@ -82,7 +82,7 @@ Returning:
 
 ### Generating an address
 
-To generate a unique Ark address from a given public key:
+To generate a unique Phantom address from a given public key:
 
 ```js
 var address = phantom.crypto.getAddress("5d036a858ce89f844491762eb89e2bfbd50a4a0a0da658e4b2628b25b117ae09");
@@ -141,7 +141,7 @@ On the client using [jQuery](https://jquery.com/):
 ```js
 var nethash;
 $.ajax({
-  url: "https://api.arknode.net/peer/transactions/",
+  url: "https://api.phantomnode.net/peer/transactions/",
   data: JSON.stringify({}),
   dataType: "json",
   method: "POST",
@@ -163,7 +163,7 @@ From a server using [Request](https://github.com/request/request):
 ```js
 var nethash;
 request({
-  url: "https://api.arknode.net/peer/transactions",
+  url: "https://api.phantomnode.net/peer/transactions",
   json: { },
   method: "POST",
   headers: {
@@ -205,7 +205,7 @@ var success = function(data) {
 };
 
 $.ajax({
-  url: "https://api.arknode.net/peer/transactions",
+  url: "https://api.phantomnode.net/peer/transactions",
   data: JSON.stringify({ transactions: [transaction] }),
   dataType: "json",
   method: "POST",
@@ -233,7 +233,7 @@ var callback = function(error, response, body) {
 };
 
 request({
-  url: "https://api.arknode.net/peer/transactions",
+  url: "https://api.phantomnode.net/peer/transactions",
   json: { transactions: [transaction] },
   method: "POST",
   headers: {
@@ -286,11 +286,11 @@ var transaction = phantom.vote.createVote("secret", ["+5819957819195001929918192
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@phantom.io. All security vulnerabilities will be promptly addressed.
 
 ## Authors
-- FX Thoorens <fx@ark.io>
-- Guillaume Verbal <doweig@ark.io>
+- FX Thoorens <fx@phantom.io>
+- Guillaume Verbal <doweig@phantom.io>
 - Boris Povod <boris@crypti.me>
 - Oliver Beddows <oliver@lisk.io>
 

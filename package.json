@@ -1,7 +1,7 @@
 {
   "name": "phantomjs",
   "version": "0.2.1",
-  "description": "JavaScript library for sending Ark transactions from the client or server",
+  "description": "JavaScript library for sending Phantom transactions from the client or server",
   "main": "index.js",
   "engines": {
     "node": ">=4"
@@ -12,7 +12,7 @@
     "build:docs": "jsdoc -c jsdoc.json",
     "clean:docs": "shx rm -r ./docs",
     "lint": "eslint .",
-    "test": "mocha test/ark.js test/*/*"
+    "test": "mocha test/phantom.js test/*/*"
   },
   "directories": {
     "doc": "./doc",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArkEcosystem/ark-js.git"
+    "url": "git+https://github.com/PhantomEcosystem/phantom-js.git"
   },
-  "homepage": "https://github.com/ArkEcosystem/ark-js",
+  "homepage": "https://github.com/PhantomEcosystem/phantom-js",
   "keywords": [
     "api",
-    "ark",
+    "phantom",
     "blockchain",
     "client",
     "cryptocurrency",
@@ -34,10 +34,10 @@
     "server",
     "transaction"
   ],
-  "bugs": "https://github.com/ArkEcosystem/ark-js/issues",
+  "bugs": "https://github.com/PhantomEcosystem/phantom-js/issues",
   "contributors": [
-    "FX Thoorens <fx@ark.io>",
-    "Guillaume Verbal <doweig@ark.io>",
+    "FX Thoorens <fx@phantom.io>",
+    "Guillaume Verbal <doweig@phantom.io>",
     "Boris Povod <boris@crypti.me>",
     "Oliver Beddows <oliver@lisk.io>"
   ],
@@ -64,7 +64,7 @@
     "browserify": "^14.4.0",
     "eslint": "^4.10.0",
     "jsdoc": "^3.5.5",
-    "marked": "^0.3.12",
+    "mphantomed": "^0.3.12",
     "mocha": "^4.0.1",
     "proxyquire": "^1.8.0",
     "should": "^13.1.3",
