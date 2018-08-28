@@ -10,8 +10,7 @@
 Phantom JS is a JavaScript library for sending PHANTOM transactions. It's main benefit is that it does not require a locally installed PHANTOM node, and instead utilizes the existing peers on the network. It can be used from the client as a [browserify](http://browserify.org/) compiled module, or on the server as a standard Node.js module.
 
 ## Installation
-
-[![npm package](https://nodei.co/npm/phantomjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/phantomjs/)
+[![NPM](https://nodei.co/npm/phantomcore-js.png)](https://nodei.co/npm/phantomcore-js/)
 
 ## Building
 
@@ -289,8 +288,8 @@ var transaction = phantom.vote.createVote("secret", ["+5819957819195001929918192
 If you discover a security vulnerability within this package, please send an e-mail to security@phantom.io. All security vulnerabilities will be promptly addressed.
 
 ## Authors
-- FX Thoorens <fx@phantom.io>
-- Guillaume Verbal <doweig@phantom.io>
+- FX Thoorens <fx@ark.io>
+- Guillaume Verbal <doweig@ark.io>
 - Boris Povod <boris@crypti.me>
 - Oliver Beddows <oliver@lisk.io>
 
