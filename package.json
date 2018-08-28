@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PhantomEcosystem/phantom-js.git"
+    "url": "git+https://github.com/PhantomEcosystem/phantomjscore.git"
   },
   "homepage": "https://github.com/PhantomEcosystem/phantom-js",
   "keywords": [
