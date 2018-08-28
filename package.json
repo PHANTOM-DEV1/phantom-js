@@ -1,5 +1,5 @@
 {
-  "name": "phantomjs",
+  "name": "phantomcore-js",
   "version": "0.2.1",
   "description": "JavaScript library for sending Phantom transactions from the client or server",
   "main": "index.js",
