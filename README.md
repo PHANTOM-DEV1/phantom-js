@@ -47,7 +47,7 @@ On the client:
 On the server:
 
 ```js
-var phantom = require("phantomjs");
+var phantomjs = require("phantomjscore");
 ```
 
 ### Generating a key pair
